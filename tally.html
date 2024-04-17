@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tallyfy</title>
+    <link rel="stylesheet" href="tally.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="d-flex">
+            <img src="./Icons/logo.png" alt="" height="30px">
+            <a style="text-decoration: none;" href="./index.html"><h4 style="color: #253F53; font-weight: 700;">Hubstaff</h4></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="margin-left: 30px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <div class="dropdown-menu">
+                  <div class="show">
+                     <ul style="padding-left: 40px;">
+                    
+                  <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">TIME TRACKING</a></li>
+                  <p class="pb-2" style="width: 250px; color: #636B83; font-size: 14px;">manage productivity and projects for teams from 1-100</p>
+                  <hr style="width: 200px;">
+                      <div class="d-flex">
+                        <img src="./Icons/Time tracking.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Time tracking Software</p>
+                      </div>
+    
+                      <div class="d-flex pt-3">
+                        <img src="./Icons/Employee Timesheets.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Employee timesheets</p>
+                      </div>
+    
+                      <div class="d-flex pt-3">
+                        <img src="./Icons/online.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Online time reporting</p>
+                      </div>
+    
+                      <div class="d-flex pt-3">
+                        <img src="./Icons/time clock.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Time clock app</p>
+                      </div>
+    
+                      <div class="d-flex pt-3">
+                        <img src="./Icons/Geofencing.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A; width: 300px;">Geofencing employee tracking</p>
+                      </div>
+                 
+                  </ul>
+                  <!-- Time -->
+                 <ul>
+                  <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">EMPLOYEE EXPERIENCE</a></li>
+                  <p class="pb-2" style="width: 250px; color: #636B83; font-size: 14px;">Track hours, automate timesheets, and improve payroll processes</p>
+                  <hr style="width: 200px;">
+                      <div class="d-flex">
+                        <img src="./Icons/Remote.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Remote employee experience (REX)</p>
+                      </div>
+    
+                      <div class="d-flex pt-3">
+                        <img src="./Icons/Employee.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Employee productivity software</p>
+                      </div>
+    
+                      <div class="d-flex pt-3">
+                        <img src="./Icons/Habit.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Habit tracker app</p>
+                      </div>
+    
+                      <div class="d-flex pt-3">
+                        <img src="./Icons/Workforce.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Workforce Optimization 
+                        <br> Software
+                        </p>
+                      </div>
+    
+                      <div class="d-flex pt-3">
+                        <img src="./Icons/Daily.png" alt="" height="20px">
+                        &nbsp;
+                        <p style="font-size: 16px; font-weight: 600; color: #1F294A; width: 300px;">Daily Stand-up tool</p>
+                      </div>
+                 </ul>
+                 <!-- Employee -->
+    
+                  <ul>
+                    <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">REPORTING AND ANALYTICS</a></li>
+                    <p class="pb-2" style="width: 250px; color: #636B83; font-size: 14px;">Pull 20+ reports to add context to your workforce data</p>
+                    <hr style="width: 200px;">
+                        <div class="d-flex">
+                          <img src="./Icons/Insigts.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Insight</p>
+                        </div>
+      
+                        <div class="d-flex pt-3">
+                          <img src="./Icons/Workforce.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Workforce analytics software</p>
+                        </div>
+      
+                        <div class="d-flex pt-3">
+                          <img src="./Icons/Time tracking.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Workforce analytics metrics</p>
+                        </div>
+      
+                        <div class="d-flex pt-3">
+                          <img src="./Icons/Employee Timesheets.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Project cost management</p>
+                        </div>
+      
+                        <div class="d-flex pt-3">
+                          <img src="./Icons/time clock.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A; width: 300px;">Overtime tracker</p>
+                        </div>
+                  </ul>
+                  <!-- REPORTING -->
+    
+                  <ul>
+                    <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">WORKFORCE MANAGEMENT</a></li>
+                    <p class="pb-2" style="width: 250px; color: #636B83; font-size: 14px;">Help remote, hybrid, and in-office teams have their best day at work</p>
+                    <hr style="width: 200px;">
+                        <div class="d-flex">
+                          <img src="./Icons/schelduling.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Employee schelduling</p>
+                        </div>
+      
+                        <div class="d-flex pt-3">
+                          <img src="./Icons/management.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Workorder Management</p>
+                        </div>
+      
+                        <div class="d-flex pt-3">
+                          <img src="./Icons/invoicing.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Online Invoicing</p>
+                        </div>
+      
+                        <div class="d-flex pt-3">
+                          <img src="./Icons/payroll.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A;">Payroll tracker</p>
+                        </div>
+      
+                        <div class="d-flex pt-3">
+                          <img src="./Icons/enterprise.png" alt="" height="20px">
+                          &nbsp;
+                          <p style="font-size: 16px; font-weight: 600; color: #1F294A; width: 300px;">Enterprise</p>
+                        </div>
+                  </ul>
+                  
+                  </div>
+                  <div style="text-align: center; display: grid;">
+                    <p><a href="" style="color: #294DFF;">see all features</a></p>
+                  </div>
+                 
+                </div>
+              </li>
+              <!-- WORKFORCE -->
+    
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="margin-left: 30px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  How it works
+                </a>
+                <div class="dropdown-menu">
+                  <div class="show pb-3">
+                     <ul style="padding-left: 50px;">
+                   <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">SOLUTION</a></li>
+                   <hr style="width: 200px;">
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Remote work software</p>
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Field service management</p>
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Construction</p>
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Freelance time tracking</p>
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Consultant time tracking</p>
+                   <hr style="width: 200px;">
+                   <p><a href="" style="color: #294DFF;">see all features</a></p>
+    
+                  
+                  </ul>
+                 <ul style="padding-left: 50px;">
+                  <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">INDUSTRIES</a></li>
+                  <hr style="width: 200px;">
+                  <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Software development</p>
+                  <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Agency</p>
+                  <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Real Estate</p>
+                  <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">E-commerce</p>
+                  <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Staffing and recruiting</p>
+                  <hr style="width: 200px;">
+                  <p><a href="" style="color: #294DFF;">see all features</a></p>
+                 </ul>
+    
+                  <ul style="padding-left: 50px;">
+                    <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">INTEGRATION</a></li>
+                    <hr style="width: 200px;">
+                    <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Hubstaff+Taks</p>
+                    <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Jira</p>
+                    <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Trello</p>
+                    <p style="font-size: 16px; font-weight: 600; color: #1F294A; padding-bottom: 70px;">Quickbooks</p>
+                    <hr style="width: 200px;">
+                    <p><a href="" style="color: #294DFF;">see all features</a></p>
+                  </ul>
+    
+                  <ul style="padding-left: 50px; background-color: #F5F7FA; margin-left: 20px;">
+                    <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">TALK TO US</a></li>
+                    <hr style="width: 200px;">
+                    <p class="pb-3" style="font-size: 14px; font-weight: 500; color: #766B83; width: 250px;">Learn more about Hubstaff from our in-house product specialist.</p>
+                    
+                    <div class="d-flex" style="font-size: 16px; line-height: 24px; color: #1F294A; font-weight: 600;">
+                      <div class="col" style="padding-right: 1px;">
+                        <img src="./Icons/call.png" alt="" height="20px">
+                       </div>
+                       <div class="col">
+                        <p>Americas</p>
+                        <p style="width: 200px;">+1 317 482 7165</p>
+                       </div>
+                    </div>
+                    <!-- Americans -->
+                    <div class="d-flex" style="font-size: 16px; line-height: 24px; color: #1F294A; font-weight: 600; padding-bottom: 35px;">
+                      <div class="col" style="padding-right: 1px;">
+                        <img src="./Icons/call.png" alt="" height="20px">
+                       </div>
+                       <div class="col">
+                        <p>EMEA/APAC</p>
+                        <p style="width: 200px;">+1 317 482 7165</p>
+                       </div>
+                    </div>
+                    
+                    <hr style="width: 200px;">
+                    <p><a href="" style="color: #294DFF;">see all features</a></p>
+                  </ul>
+                  </div>
+                 
+                </div>
+    
+    
+              </li>
+              <!-- INTEGRATION -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="margin-left: 30px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Apps
+                </a>
+                <div class="dropdown-menu">
+                  <div class="show">
+                     <ul style="padding-left: 50px;">
+                    
+                      <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">DESKTOP</a></li>
+                      <hr style="width: 200px;">
+                      <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Mac</p>
+                      <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Window</p>
+                      <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Linux</p>
+                      <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">ChromeOs</p>
+                      <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Consultant time tracking</p>
+                      <hr style="width: 200px;">
+                      <p><a href="" style="color: #294DFF; font-weight: 500;" >Download the app</a></p>
+                  </ul>
+    
+                 <ul style="padding-left: 60px;">
+                   <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">MOBILE</a></li>
+                   <hr style="width: 200px;">
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">iOs</p>
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Android</p>   
+                 </ul>
+    
+                  <ul style="padding-left: 60px;">
+                    <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">WEB</a></li>
+                   <hr style="width: 200px;">
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Google chrome extension</p>
+                  </ul>
+                  
+                  <ul style="padding-left: 60px; background-color: #F5F7FA; margin-left: 30px;">
+                    <li><a class="dropdown-item" href="#" style="font-size: 16px; color: #1F294A; font-weight: 600;">START FREE TRIAL</a></li>
+                   <hr style="width: 200px;">
+                   <p class="pb-3" style="font-size: 16px; font-weight: 600; color: #1F294A;">Start free trial</p>
+                  </ul>
+                  </div>
+                 
+                </div>
+              </li>
+    
+    
+    
+    
+              <div class="d-flex mt-3" style="margin-left: 460px;">
+                <a style="text-decoration: none;" href="./pricing.html"><p style="font-size: 16px; font-weight: 500; color: #253053;">Pricing</p></a>
+                &nbsp;
+                <a style="text-decoration: none;" href="#"><p style="font-size: 16px; font-weight: 500; color: #253053">Demo</p></a>
+              </div>
+    
+           
+              <div style="margin-left: 80px;">
+              <button class="btn1 fs-5" type="submit">Free 14-day trial</button>
+              </div>
+              &nbsp;
+              &nbsp;
+              <div>
+                <button class="btns fs-5" type="submit">Sign in</button>
+              </div>
+    
+          </div>
+        </div>
+      </nav>
+      <!-- nav end -->
+
+      <section>
+        <div class=" containers container-flulid pb-5" style="background-color: #F2F8FF; padding-top: 100px;">
+            <div class="row">
+                <div class="col" style="padding-left: 100px; padding-top: 190px;">
+                    <img src="./New folder/tallyfy-ea62568630aebdbf2d528772de9fa9613bd7a1f41b89e1a3b089e9a8b73420bd.svg" alt="" width="250px">
+                    <h1 class="pt-2">When an onboarding 
+                        <br>company needs to 
+                        <br>streamline its process</h1>
+                        <p class="pt-3" style="color: #766B83;font-size: 18px;">Learn how Tallyfy used HS to make their company more efficient.</p>
+                </div>
+                <div class="col pt-3">
+                   <img src="./New folder/hero-2x-tallyfy.png" alt="" width="600px">
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- ct1 -->
+
+      <section class="bg-light" style="text-align: center;">
+        <h2 class="pb-3" style="font-size: 46px; color: #253053; font-weight: 600;">Watch the Tallyfy case study</h2>
+        <img src="./New folder/tally.png" alt="" width="800px" style="padding-bottom: 150px;">
+      </section>
+      <!-- ct2 -->
+
+      <section class="pt-4" style="padding-left: 100px;">
+        <div class="container">
+            <div class="d-flex">
+                <img src="./Icons/enterprise.png" alt="" height="40px">
+                    <div class="d-md-block pt-1" style="padding-left: 20px;">
+                    <p style="font-size: 16px; line-height: 24px; color: #1F294A; margin: 5px; font-weight: 600;">Founded in 2015</p>
+                    <p style="font-size: 16px; line-height: 24px; color: #636B83">to solve onboarding pain points </p>
+                    </div>
+    
+            <div class="d-flex" style="padding-left: 50px;">
+                <img src="./Icons/Remote.png" alt="" height="30px">
+                    <div class="d-md-block pt-1" style="padding-left: 20px;">
+                    <p style="font-size: 16px; line-height: 24px; color: #1F294A; margin: 5px; font-weight: 600;">Headquartered</p>
+                    <p style="font-size: 16px; line-height: 24px; color: #636B83">in St. Louis, Missouri</p>
+                    </div>
+    
+            <div class="d-flex" style="padding-left: 50px;">
+                <img src="./Icons/industrys.png" alt="" height="40px">
+                    <div class="d-md-block pt-1" style="padding-left: 20px;">
+                    <p style="font-size: 16px; line-height: 24px; color: #1F294A; margin: 5px; font-weight: 600;">Provides onboarding</p>
+                    <p style="font-size: 16px; line-height: 24px; color: #636B83">solutions for their clients</p>
+                    </div>
+    
+            <div class="d-flex" style="padding-left: 50px;">
+                <img src="./Icons/employees.png" alt="" height="40px">
+                    <div class="d-md-block pt-1" style="padding-left: 20px;">
+                    <p style="font-size: 16px; line-height: 24px; color: #1F294A; margin: 5px; font-weight: 600;">Operates a remote team</p>
+                    <p style="font-size: 16px; line-height: 24px; color: #636B83">with employees all over the world</p>
+                    </div>
+            </div>
+        </div>
+      </section>
+      <hr class="container" style="font-weight: 500;">
+      <!-- cont2 -->
+
+      <section>
+        <div class="container d-flex">
+             
+            <div class="anne col-3">
+                <h3>Changing the processes</h3>
+                <a href="#"><p>Evoloving the onboarding game</p></a>
+                <a href="#"><p>Annequine mission and motor</p></a>
+                <a href=""><p>Growing quickly</p></a>
+                <a href=""><p>Needing a solution</p></a>
+                <a href=""><p>Simple payroll and integrations</p></a>
+                <a href=""><p>Easy time tracking</p></a>
+                <a href=""><p>Better activity tracking/p></a>
+                <a href=""><p>Hubstaff</p></a>
+            </div>
+            <div class="keys" style="padding-left: 50px;">
+                <h2>Changing the Processes</h2>
+                <p>Tallyfy was tired of the old way of doing things. For as long as he could remember, Amit Kothari had worked at companies where the onboarding
+                     process was an absolute nightmare. “Who’s doing what?”, “What’s up next?”, and “Has anyone updated the client?” were questions he’d heard too 
+                     many times for comfort. There had to be a better way of onboarding team members and clients to projects.</p>
+
+                <h2 style="width: 750px; font-weight: 500;">It should be simpler for people to document a process and track it. What’s the point of making a flow chart if no one is going to use it anyway? That’s why we started Tallyfy. </h2>
+
+                 <p>Amit Kothari / Co-founder of Tallyfy</p>
+
+                <h2>Evolving the onboarding game</h2>
+
+                <p style="width: 700px;">After seeing a need for improvement, Kothari and his team created Tallyfy, which helps people document, automate, and track recurring workflows that you’d see in any onboarding strategy.</p>
+                <p style="width: 700px;">Within Tallyfy you can create a blueprint for your onboarding process that can be reused. Meaning, once you create it, that process doesn’t go away, can be recycled for new clients and hires, and will improve as your business grows.</p>
+
+                <h2 style="width: 700px; font-weight: 500;">As a tech company, we were growing really quickly. We also have this remote workforce all over the place, so we needed a way to record time,
+                account for time, and use that tracked time to bill clients.</h2>
+
+                 <p>Amit Kothari/ Co-founder of Tallyfy</p>
+
+                 <h2>Growing quickly</h2>
+
+                <p style="width: 700px;">Tallyfy saw their clients’ approval processes shrinking and numbers increasing as theirs did, which began to create a problem. With an entirely remote workforce, they were losing track of their employees’ time and finding it harder to accurately pay them for all the work 
+                   they were doing. Additionally, they didn’t have an easy time onboarding new team members. They needed to find an employee management solution that not only worked with their existing process, but one that their team could use no matter where they were.</p>
+
+                 <h2>Needing a solution</h2>
+                  <p style="width: 700px;">Tallyfy needed a program that not only solved their problems but also aligned with their philosophies as a company. They believed that work should both be challenging but shouldn’t interfere with their employees’ lives, which is why they chose to be a remote company. 
+                 In the same vein, they believe that the future of work is in one's ability to work autonomously without too much hand-holding.</p>
+                  <p style="width: 700px;">They needed a solution that both fixed their miscommunications company-side, but also a brand they could stand behind. They found both of these in Hubstaff.</p>
+
+                 <h2>Simple payroll and integrations</h2>
+                 <p style="width: 700px;">Because Kothari’s team is mostly remote — spanning countries all over the world — 
+                   they needed a way to have their team members submit invoices, no matter the timezone, and be able to pay them
+                  from a couple of different services. Hubstaff allows you to do just that: Your team can submit their timesheets 
+                     weekly and we’ll even remind them with weekly
+                     email notifications. And, with over 30 app integrations, you can pay your team however you choose.</p>
+
+                <h2>Easy time tracking</h2>
+                <p style="width: 700;">Hubstaff makes it easy for anyone on your team to track time. Tallyfy needed a solution that could work for numerous kinds of people all with varying ways of getting their work done. Because you can choose how you’d like to track time — 
+                    options varying from our desktop, web, and mobile apps — your team members don’t have to change the way they work to start using Hubstaff.</p>
+                <h2 style="font-weight: 500;">We are happy to work with Hubstaff because it enables us to have a team that can out-compete our competition.</h2>
+                <p>Amit Kothari/ Co-founder of Tallyfy</p>
+
+                <h2>Better activity tracking</h2>
+                <p style="width: 700px;">Though Kothari trusts his people, it’s always nice to have an added level of security. Hubstaff’s time tracking has the added feature of activity tracking with optional screenshots, so management can see how productive everyone has been from week to week.
+                 “It’s great to know that we have this insurance policy that is running in the background,” says Kothari.</p>
+
+
+                 <div style="background-color: #F2F8FF;justify-content: center; align-items: center; text-align: center;padding-bottom: 40px;">
+                <h2 style="font-weight: 500; padding-top: 40px;">Start today</h2>
+                <p>Start tracking your team’s time and work activity with Hubstaff</p>
+                <button class="btn">Start free trial</button>
+                </div>
+
+                <h2>Hubstaff</h2>
+                <p style="width: 700px;">“If we didn’t have Hubstaff,” says Kothari, “it would be chaos. I just literally wouldn’t know who is doing what. It’s one of the biggest
+                     enablers of our remote workforce.” Hubstaff allows Tallyfy not only to function with a remote team, but thrive with one. They can now easily pay their
+                      employees and onboard new ones, all without having to worry about the who, what, when, where, and why’s of it all.</p>
+
+            <h2 style="width: 700px; font-weight: 500px;">“We believe — just like Hubstaff — that talent is everywhere and people should be able to work any time, anywhere, even in their pajamas,” says Kothari.
+                 “As a company, we believe in the same future of work as Hubstaff, which is great because our values align.”</h2>
+                 <p>Their final word on Hubstaff</p>
+
+            </div>
+            </div>
+      </section>
+
+
+
+      <section class="container-fluid" style="background-color: #294DFF; color: white; text-align: center; padding-bottom: 50px;">
+        <h1 class="pt-5">Create a positive remote team experience while 
+          <br>improving your bottom line with Hubstaff</h1>
+          <p style="font-weight: 500;">Start automating your time tracking, HR, and admin process today to save money on 
+            <br>admin, HR, and customer service headcount like Anequim.</p>
+    
+            <button class="butns">Try Hubstaff free for 14days</button>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+<footer class="footer-s">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="s7 col-3  d-flex">
+          <div>
+            <img src="./safari-pinned-tab.svg" alt="" width="70px">
+          </div>
+            <div class="ft1">
+            <h6 style="color: white;">software</h6>
+            <div style="width: 200px;">
+              <p class="trx">Features Overview</p>
+            <p class="trx">Solution</p>
+            <p class="trx">Free time tracking app</p>
+            <p class="trx">Integration</p>
+            <p class="trx">Download App</p>
+            <p class="trx">Demo</p>
+            <p class="trx">Integration</p>
+            <p class="trx">Time Tracking API</p>
+            <p class="trx">Request a feature</p>
+            </div>
+          </div>
+  
+          <div class="ft2" style="margin-bottom: 3px;">
+             <h6 style="color: white">Learning Center</h6>
+            <div style="width: 200px;">
+              <p>Time tracking resources</p>
+              <p>Workforce management resources</p>
+              <p>Business resources</p>
+              <p>Guiding principles</p>
+              <p>Blog</p>
+            </div>
+          </div>
+          <div class="ft3">
+            <h6 style="color: white;">More</h6>
+            <div style="width: 200px;">
+              <p>Help Center</p>
+            <p>FAQ</p>
+            <p>Status</p>
+            </div>
+            
+          </div>
+          <div class="ft4">
+            <h6 style="color: white">Company</h6>
+            <div style="width: 200px;">
+              <p>About us</p>
+            <p>Contact Us</p>
+            <p>Reviews</p>
+            <p>Customer stories</p>
+            <p>Careers</p>
+            <p>Press</p>
+            <p>Partners</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="ft5 col ">
+          <h3 class="rs">Ready to get started?</h3>
+          <Button class="btg">Sign me up</Button>
+          <hr style="color: #7E8495;">
+          <h5 class="pt-3" style="color: white;">Follow us</h5>
+          <div>
+            <a href=""><img src="./facebook.png" alt="" width="30px"></a>
+            <a href=""><img src="./instagram.png" alt="" width="30px"></a>
+            <a href=""><img src="./youtube.png" alt="" width="30px"></a>
+            <a href=""><img src="./linkedln.png" alt="" width="30px"></a>
+           
+          </div>
+        </div>
+  
+      </div>
+      
+    </div>
+  
+  
+    <div class="d-flex pt-4" style="background-color: #1F294A;">
+      <div class="text-light d-flex col-7" style="padding-left: 100px;">
+        <div class="d-flex">
+          <img src="./New folder/Screenshot 2024-04-10 091703.png" alt="" height="30px">
+          &nbsp;
+          <h5 style="color: white; font-weight: 700;">Hubstaff</h5>
+        </div>
+  
+        <div style="color: #636B83; padding-left: 100px;">
+          <p style="width: 300px; margin-bottom: 5px;">Copyright © 2024 Netsoft Holdings, LLC</p>
+          <p style="width: 400px;">11650 Olio Road, Suite #1000 - 193 Fishers, IN 46037</p>
+        </div>
+            <a href=""><p style="color: white;">Terms</p></a>
+            &nbsp;
+            &nbsp;
+          <a href=""><p style="color: white;">privacy</p></a>
+          &nbsp;
+          &nbsp;
+          <a href=""><p style="color:white; width: 200px;">GDR compliance</p></a>
+          </div>
+        
+      </div>
+    </div>
+    
+  
+  
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
